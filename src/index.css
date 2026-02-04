@@ -353,3 +353,28 @@ ol {
   text-align: center;
   color: black;
 }
+
+ /* Default: SEMBUNYI */
+    .rotate-warning {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      color: #fff;
+      z-index: 9999;
+
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+ /* HANYA MOBILE + PORTRAIT */
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+      .rotate-warning {
+        display: flex;
+      }
+
+      .content {
+        display: none;
+      }
+    }
