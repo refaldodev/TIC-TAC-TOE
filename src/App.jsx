@@ -93,10 +93,7 @@ function App() {
     <main>
      
 <div class="rotate-warning">
-  <div>
-    <h2>📱 Please Rotate Your Phone</h2>
-    <p>Use landscape mode for better experience</p>
-  </div>
+
 </div>
       <div id="game-container">
         <ol id="players" className="highlight-player">
