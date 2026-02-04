@@ -349,3 +349,29 @@ ol {
     transform: scale(1);
   }
 }
+
+
+.footer{
+  text-align: center;
+  color: rgb(22, 22, 22);
+}
+/*  */
+
+@media screen and (max-width: 768px) {
+
+#game-board button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background: #aca788;
+  color: #3f3b00;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: 'Caprasimo', cursive;
+  padding: 1rem;
+}
+.player-name{
+  font-size: 12px;
+  width: 5rem;
+}
+}
