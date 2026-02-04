@@ -91,6 +91,13 @@ function App() {
   }
   return (
     <main>
+     
+<div class="rotate-warning">
+  <div>
+    <h2>📱 Please Rotate Your Phone</h2>
+    <p>Use landscape mode for better experience</p>
+  </div>
+</div>
       <div id="game-container">
         <ol id="players" className="highlight-player">
           <Player
@@ -112,6 +119,10 @@ function App() {
         <GameBoard onSelecetSquare={handleSelectSquare} board={gameBoard} />
       </div>
       <Log turns={gameTurns} />
+
+      <footer>
+        <p className="footer">All rights reserved ©2026 Refaldo Rachman</p>
+      </footer>
     </main>
   );
 }
