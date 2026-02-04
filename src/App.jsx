@@ -112,6 +112,10 @@ function App() {
         <GameBoard onSelecetSquare={handleSelectSquare} board={gameBoard} />
       </div>
       <Log turns={gameTurns} />
+
+      <footer>
+        <p className="footer">All rights reserved ©2026 Refaldo Rachman</p>
+      </footer>
     </main>
   );
 }

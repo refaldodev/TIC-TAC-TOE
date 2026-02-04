@@ -349,3 +349,7 @@ ol {
     transform: scale(1);
   }
 }
+.footer{
+  text-align: center;
+  color: black;
+}
