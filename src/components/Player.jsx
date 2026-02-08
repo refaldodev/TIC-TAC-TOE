@@ -24,7 +24,13 @@ export default function Player({
   let editablePlayerName = <span className="player-name">{playerName}</span>;
   if (isEditing) {
     editablePlayerName = (
-      <input type="text" required value={playerName} onChange={handleChange} />
+      <input type="text" required value={playerName} onChange={handleChange} onKeyDown={(e) => {
+        if (e.key === "Enter") {
+          onChangeName(symbol, playerName); // simpan
+          setIsEditing(false); // keluar edit mode
+        }
+      }}
+      autoFocus />
     );
   }
   return (
